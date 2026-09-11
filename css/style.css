@@ -198,3 +198,38 @@ svg * {
   font-style: normal;
   font-display: swap;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  background-color: #fff;
+}
+
+.filter-panel__list {
+  display: flex;
+  column-gap: 12px;
+}
+
+.filter-panel__button {
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  transition-duration: 0.2s;
+
+  &:hover {
+    color: #fff;
+    background-color: #523ee8;
+    border-color: #523ee8;
+  }
+
+  &.is-active {
+    padding: 12px 24px;
+    color: #fff;
+    background-color: #523ee8;
+    border-color: #523ee8;
+    border-radius: 12px;
+  }
+}
